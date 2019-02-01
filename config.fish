@@ -1,12 +1,15 @@
+set -g -x PATH $PATH /usr/local/bin
+
+set -g -x PATH $PATH /usr/bin /bin /usr/sbin /sbin
+
 set LANG en_US.UTF-8
-set PATH /usr/local/bin /usr/local/sbin $PATH
 
 # Java installation
 set JAVA_HOME (/usr/libexec/java_home -v 1.8.0_202)
 set PATH $JAVA_HOME/bin/ $PATH
 
 # GEM installation
-set GEM_HOME ~/.gem
+set GEM_HOME /Users/mortenhogh/.gem
 set PATH $GEM_HOME/bin $PATH
 
 # Python installation (through brew)
